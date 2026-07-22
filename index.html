@@ -3,51 +3,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="[사람 확인 필요] 개인 프로페셔널 웹사이트">
+  <meta name="description" content="[사람 확인 필요]의 프로페셔널 포트폴리오">
   <title>[사람 확인 필요] | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="game.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#home">[사람 확인 필요]</a>
+    <a class="brand" href="#home" aria-label="홈으로 이동">[사람 확인 필요]</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">메뉴</button>
     <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
-      <a href="#profile">Profile</a>
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
       <a href="#games">Games</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="home">
-    <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">PORTFOLIO / [사람 확인 필요]</p>
-      <h1 id="hero-title">[사람 확인 필요]</h1>
-      <p>프로필 콘텐츠는 CV 또는 사람 확인 후 작성합니다.</p>
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">PORTFOLIO / [사람 확인 필요]</p>
+        <h1 id="hero-title">[사람 확인 필요]</h1>
+        <p class="hero-lede">프로필과 작업 내용을 차분하게 탐색할 수 있는 개인 웹사이트입니다.</p>
+        <a class="button button-primary" href="#about">프로필 보기</a>
+      </div>
+      <div class="hero-console" aria-label="사이트 상태">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>STATIC_PROFILE / ONLINE</span>
+        <span class="console-line">&gt; identity: [사람 확인 필요]</span>
+        <span class="console-line">&gt; focus: [사람 확인 필요]</span>
+      </div>
     </section>
 
-    <section id="profile" class="content-section" aria-labelledby="profile-title">
-      <h2 id="profile-title">Profile</h2>
-      <p>[사람 확인 필요]</p>
+    <section id="about" class="content-section section-shell" aria-labelledby="about-title">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2 id="about-title">About</h2></div>
+      <div class="section-grid two-columns">
+        <p class="lead-copy">[사람 확인 필요] CV가 제공되지 않아 자기소개와 전문 분야는 확인 후 작성합니다.</p>
+        <dl class="fact-list">
+          <div><dt>Location</dt><dd>[사람 확인 필요]</dd></div>
+          <div><dt>Focus</dt><dd>[사람 확인 필요]</dd></div>
+          <div><dt>Contact</dt><dd>[사람 확인 필요]</dd></div>
+        </dl>
+      </div>
     </section>
 
-    <section id="projects" class="content-section" aria-labelledby="projects-title">
-      <h2 id="projects-title">Projects</h2>
-      <p>[사람 확인 필요]</p>
+    <section id="projects" class="content-section section-shell" aria-labelledby="projects-title">
+      <div class="section-heading"><p class="eyebrow">02 / SELECTED WORK</p><h2 id="projects-title">Projects</h2></div>
+      <div class="card-grid">
+        <article class="info-card"><span class="card-index">01</span><h3>[사람 확인 필요]</h3><p>프로젝트 설명은 확인된 자료를 바탕으로 작성합니다.</p></article>
+        <article class="info-card"><span class="card-index">02</span><h3>[사람 확인 필요]</h3><p>프로젝트 설명은 확인된 자료를 바탕으로 작성합니다.</p></article>
+        <article class="info-card"><span class="card-index">03</span><h3>[사람 확인 필요]</h3><p>프로젝트 설명은 확인된 자료를 바탕으로 작성합니다.</p></article>
+      </div>
     </section>
 
-    <section id="games" class="content-section game-placeholder" aria-labelledby="games-title">
-      <h2 id="games-title">Games</h2>
-      <p>지렁이 게임 준비 영역입니다. 게임 기능은 다음 루프에서 구현합니다.</p>
+    <section id="experience" class="content-section section-shell" aria-labelledby="experience-title">
+      <div class="section-heading"><p class="eyebrow">03 / EXPERIENCE</p><h2 id="experience-title">Experience</h2></div>
+      <div class="timeline-item"><span class="timeline-marker" aria-hidden="true"></span><div><p class="muted-label">[사람 확인 필요]</p><h3>[사람 확인 필요]</h3><p>경력 정보는 확인된 자료 수신 후 업데이트합니다.</p></div></div>
     </section>
 
-    <section id="contact" class="content-section" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact</h2>
-      <p>[사람 확인 필요]</p>
+    <section id="research" class="content-section section-shell" aria-labelledby="research-title">
+      <div class="section-heading"><p class="eyebrow">04 / RESEARCH</p><h2 id="research-title">Research</h2></div>
+      <p class="lead-copy">[사람 확인 필요] 연구·관심 분야와 관련 링크는 사람 확인 후 추가합니다.</p>
+    </section>
+
+    <section id="games" class="content-section section-shell games-section" aria-labelledby="games-title">
+      <div class="section-heading"><p class="eyebrow">05 / PLAYGROUND</p><h2 id="games-title">Games</h2></div>
+      <div class="game-layout">
+        <div class="game-panel">
+          <div class="game-toolbar">
+            <label for="difficulty">난이도
+              <select id="difficulty">
+                <option value="low">하</option>
+                <option value="medium" selected>중</option>
+                <option value="high">상</option>
+              </select>
+            </label>
+            <div class="score-board" aria-live="polite"><span>점수 <strong id="score">0</strong></span><span>최고 <strong id="high-score">0</strong></span></div>
+          </div>
+          <div class="health-row" aria-label="체력 3칸"><span>HEALTH</span><div id="health" class="health-bar"><i></i><i></i><i></i></div></div>
+          <div class="canvas-wrap"><canvas id="game-canvas" width="600" height="400" aria-label="지렁이 게임판"></canvas><div id="game-status" class="game-status" role="status">시작 버튼을 눌러 게임을 시작하세요.</div></div>
+          <div class="game-actions">
+            <button id="start-game" class="button button-primary" type="button">시작</button>
+            <button id="pause-game" class="button" type="button" disabled>일시정지</button>
+            <button id="restart-game" class="button" type="button">재시작</button>
+            <button id="invincible" class="button button-ghost" type="button">무적</button>
+          </div>
+          <p id="invincible-status" class="muted-label" aria-live="polite">무적 버튼: 사용 가능</p>
+        </div>
+        <div class="game-help">
+          <h3>Controls</h3>
+          <p>방향키 또는 WASD로 이동합니다. 반대 방향 전환은 막혀 있습니다.</p>
+          <div class="touch-controls" aria-label="모바일 방향 버튼">
+            <button type="button" data-direction="up" aria-label="위로 이동">▲</button>
+            <div><button type="button" data-direction="left" aria-label="왼쪽으로 이동">◀</button><button type="button" data-direction="down" aria-label="아래로 이동">▼</button><button type="button" data-direction="right" aria-label="오른쪽으로 이동">▶</button></div>
+          </div>
+          <p class="small-note">적 3마리 · 체력 3칸 · 충돌 3회 시 게임 오버</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section section-shell" aria-labelledby="contact-title">
+      <div class="section-heading"><p class="eyebrow">06 / CONTACT</p><h2 id="contact-title">Contact</h2></div>
+      <p class="lead-copy">[사람 확인 필요] 공개할 연락처와 외부 프로필 링크는 사람 확인 후 추가합니다.</p>
     </section>
   </main>
 
-  <footer class="site-footer">© [사람 확인 필요]</footer>
+  <footer class="site-footer"><span>© <span id="current-year"></span> [사람 확인 필요]</span><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>
